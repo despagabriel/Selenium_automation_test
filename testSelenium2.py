@@ -33,17 +33,17 @@ while True:
         break
     height=New_height
 
-lista = []
-clasa = driver.find_elements(By.ID, "dismissible")
-for detail in clasa:
+new_list = []
+class_access = driver.find_elements(By.ID, "dismissible")
+for detail in class_access:
     title = detail.find_element(By.ID, "video-title")
-    titlu = title.text
-    if titlu !='':
-        lista.append(titlu)
+    title_1 = title.text
+    if title_1 !='':
+        new_list.append(title_1)
 
 
-print(len(lista))
-for x,y in enumerate(lista):
+print(len(new_list))
+for x,y in enumerate(new_list):
     print(x, "---->",y)
 
 driver.close()
